@@ -40,12 +40,16 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
+killall polybar
+
 polybar Main &
-sleep 1 && polybar workspaces &
-polybar cpu &
-polybar filesystem &
-polybar memory &
-polybar connections &
-polybar volume &
-polybar date &
+sleep 0.2 && polybar date3 &
+sleep 0.2 && polybar workspaces &
+sleep 0.2 && polybar cpu &
+sleep 0.2 && polybar filesystem &
+sleep 0.2 && polybar memory &
+sleep 0.2 && polybar connections &
+sleep 0.2 && polybar volume &
+sleep 0.2 && polybar date &
+# sleep 0.2 && polybar battery &
 
